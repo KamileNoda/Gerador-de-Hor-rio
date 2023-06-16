@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang= "pt-br">
+<head>
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<head>
+    <style>
+       @import url(https://fonts.googleapis.com/css?family=Montserrat:300&subset=latin-ext);
+       body{
+           font-family:Montserrat, sans-serif;
+           padding: 50px;
+       }
+        form {
+    display: table;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 400px;
+
+    padding: 1em;
+    border: 1px solid #008FEA;
+    border-radius: 1em;
+    background-color: white;
+}
+div{
+   display: block;
+   padding: 15px;
+}
+
+ .input1{
+ padding: 15px;
+ margin-bottom: 0.2em;
+ font-size:14px;
+ letter-spacing:2px;
+ width: 500px;
+}
+div.button{
+   text-align: center;
+  
+}
+ button{
+   border: 20px  #008FEA;
+   border-radius: 1em;
+   width: 100px;
+   background-color: #008FEA;
+   text-align: center;
+   align-content: center;
+   display: inline-block;
+   padding: auto;
+  
+}
+h2{
+   text-align: center;
+   text-decoration: black;
+}
+    </style>
+    <img href="CEEP.jpg">
+    <title>Sistema de Grade Escolar</title>
+    <h1 align="center" > Gerador de Grade Escolar</h1>
+  <nav class="nav">
+      <ul>
+          <li><a href="#">Menu</a>
+          <li class="drop">
+            <a href="#">Cadastro</a>
+              <ul class="dropdown">
+                  <li><a href="#">Professor</a></li>
+                  <li><a href="#">Turmas</a></li>
+                  <li><a href="#">Matérias</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Horário</a>
+      </ul>
+  </nav>
+  <form action="/pagina-processa-dados-do-form" method="post">
+   <div>
+       <h2>Cadastro de Turmas</h2>
+   </div>
+    <div>
+        <label for="name">Série:</label>
+        <input type="text" id="name" class="input1"/>
+    </div>
+    <div>
+        <label for="mail">Turma:</label>
+        <input type="email" id="mail" class="input1" />
+    </div>
+    <div>
+        <label for="mail">Curso:</label>
+        <input type="email" id="mail" class="input1" />
+    </div>
+    <div class="button" >
+        <button type="submit" class="button">Casdastrar</button>
+    </div>
+</form>
+</body>
+ </html>  
