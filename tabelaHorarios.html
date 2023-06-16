@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabela de Horário Escolar</title>
+	<style>
+       @import url(https://fonts.googleapis.com/css?family=Montserrat:300&subset=latin-ext);
+
+body {
+-moz-osx-font-smoothing:grayscale;
+-ms-flex-direction:column;
+-webkit-box-direction:normal;
+-webkit-box-orient:vertical;
+-webkit-font-smoothing:antialiased;
+background:#f5f5f5;
+color:#777;
+display:flex;
+flex-direction:column;
+font-family:Montserrat, sans-serif;
+font-size: 1em;
+font-weight:300;
+margin:0;
+min-height:100vh;
+padding:5%;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 2.2rem;
+	color: #222;
+	text-align: center;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 800px;
+	background: #008FEA;
+	box-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+nav::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+    cursor: pointer;
+}
+
+nav ul li a {
+	display: block;
+	color: rgba(255, 255, 255, .9);
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	transition: all .3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	background: rgba(0, 0, 0, .15);
+}
+
+nav ul li a:focus {
+	color: white;
+}
+
+nav ul li a:not(:only-child)::after {
+	padding-left: 4px;
+	content: ' ▾';
+}
+
+nav ul li ul li {
+	min-width: 190px;
+}
+
+nav ul li ul li a {
+	background: transparent;
+	color: #555;
+	border-bottom: 1px solid #DDE0E7;
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+	background: #eee;
+	color: #111;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+}
+
+  .drop:hover .dropdown {
+    display: inline-block;
+  }
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			padding: 8px;
+			text-align: center;
+			border: 1px solid black;
+		}
+		th {
+			background-color: #CCCCCC;
+		}
+	</style>
+</head>
+<body>
+    <img href="CEEP.jpg">
+    <title>Sistema de Grade Escolar</title>
+    <h1 align="center" > Gerador de Grade Escolar</h1>
+  <nav class="nav">
+      <ul>
+          <li><a href="#">Menu</a>
+          <li class="drop">
+            <a href="#">Cadastro</a>
+              <ul class="dropdown">
+                  <li><a href="#">Professor</a></li>
+                  <li><a href="#">Turmas</a></li>
+                  <li><a href="#">Matérias</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Horário</a>
+      </ul>
+  </nav>
+  <form action="/pagina-processa-dados-do-form" method="post">
+   <div>
+	<table>
+		<tr>
+			<th>Horário</th>
+			<th>Segunda-feira</th>
+			<th>Terça-feira</th>
+			<th>Quarta-feira</th>
+			<th>Quinta-feira</th>
+			<th>Sexta-feira</th>
+		</tr>
+		<tr>
+			<td>Aula 1</td>
+			<td>Matemática</td>
+			<td>Português</td>
+			<td>Ciências</td>
+			<td>Inglês</td>
+			<td>História</td>
+		</tr>
+		<tr>
+			<td>Aula 2</td>
+			<td>Geografia</td>
+			<td>História</td>
+			<td>Matemática</td>
+			<td>Ciências</td>
+			<td>Português</td>
+		</tr>
+		<tr>
+			<td>Aula 3</td>
+			<td>Inglês</td>
+			<td>Ciências</td>
+			<td>Português</td>
+			<td>Geografia</td>
+			<td>Matemática</td>
+		</tr>
+		<tr>
+			<td>Aula 4</td>
+			<td>Ciências</td>
+			<td>Matemática</td>
+			<td>História</td>
+			<td>Português</td>
+			<td>Inglês</td>
+		</tr>
+        <tr>
+			<td>Aula 5</td>
+			<td>Ciências</td>
+			<td>Matemática</td>
+			<td>História</td>
+			<td>Português</td>
+			<td>Inglês</td>
+		</tr>
+	</table>
+</body>
+</html>
